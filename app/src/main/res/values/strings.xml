@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Dummy Application</string>
+    <string name="hello_iim">Hello IIM!</string>
+    <string name="todo">A faire</string>
+    <string name="first_name">Prénom</string>
+    <string name="hello">Bonjour %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
