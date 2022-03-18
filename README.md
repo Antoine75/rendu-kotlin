@@ -26,7 +26,7 @@ Le premier fragment doit afficher un formulaire avec les champs suivants :
 
 Ne pas valider réellement les crédentials (pas d'appels API ou DB), il faut juste valider le formulaire localement.
 
-Une fois la formulaire validé, passer sur un autre fragment qui écrit "Hello `email`" sur l'écran et demande d'écrire dans un champs libre le nom d'une ville (eg. `Paris`, `Sidney`, ...).
+Une fois la formulaire validé, passer sur un autre fragment qui écrit "Hello `email`" sur l'écran et demander d'écrire dans un champs libre le nom d'une ville (eg. `Paris`, `Sidney`, ...).
 
 Mettre un bouton en dessous du champs libre pour la ville, au click passer le nom de la ville à l'activity MapsActivity.
 
