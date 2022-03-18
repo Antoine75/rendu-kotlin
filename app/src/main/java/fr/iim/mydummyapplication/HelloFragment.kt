@@ -26,7 +26,6 @@ class HelloFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_hello, container, false)
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

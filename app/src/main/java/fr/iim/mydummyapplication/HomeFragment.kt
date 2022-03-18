@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.editTextButton).setOnClickListener {
-            val firstName = view.findViewById<EditText>(R.id.editTextFirstName).text.toString()
+            val firstName = view.findViewById<EditText>(R.id.editTextFirstName).toto()
 
             listener.OnHelloClickListener(firstName)
         }
