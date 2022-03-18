@@ -22,7 +22,7 @@ Le premier fragment doit afficher un formulaire avec les champs suivants :
 * Champs Email (avec validation)
 * Champs Password (avec validation => minimum 8 caractères, 1 lettre | 1 chiffre | 1 caractère spécial minimum)
 * Case à cocher (valider que la case soit cochée pour permettre le click sur le bouton du formulaire)
-* Bouton d'envoi (mettre le text "Login" dessus)
+* Bouton d'envoi (mettre le text "Login" dessus, le bouton ne doit pas être clickable tant que les données de validations ne sont pas OK)
 
 Ne pas valider réellement les crédentials (pas d'appels API ou DB), il faut juste valider le formulaire localement.
 
