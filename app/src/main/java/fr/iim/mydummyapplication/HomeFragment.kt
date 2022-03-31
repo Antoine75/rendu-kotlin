@@ -8,7 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
+
+
 
 class HomeFragment : Fragment() {
 
@@ -21,17 +22,28 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
+
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.editTextButton).setOnClickListener {
-            val firstName = view.findViewById<EditText>(R.id.editTextFirstName).toto()
 
-            listener.OnHelloClickListener(firstName)
+
+        view.findViewById<Button>(R.id.editTextButton).setOnClickListener {
+
+            val email = view.findViewById<EditText>(R.id.editTextTextEmailAddress).toto()
+            val password = view.findViewById<EditText>(R.id.editTextTextPassword).toto()
+
+
+
+
+            listener.onHelloClickListener(email, password)
         }
+
     }
+
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -41,10 +53,13 @@ class HomeFragment : Fragment() {
         } else {
             throw RuntimeException("$context must implement HomeFragment.HomeFragmentListener")
         }
+
+
     }
 
+
     interface HomeFragmentListener {
-        fun OnHelloClickListener(firstName: String)
+        fun onHelloClickListener(email: String, password: String)
     }
 
     companion object {
